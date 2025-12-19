@@ -9,7 +9,7 @@ export default {
   },
   meta: {
     siteName: "StaticBlocks",
-    siteUrl: "https://yourusername.github.io/staticblocks",
+    siteUrl: "https://giacomo.github.io/staticblocks-docs",
     author: "StaticBlocks Team"
   }
 };
