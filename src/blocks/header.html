@@ -19,11 +19,11 @@
       <div class="flex items-center space-x-4">
         <div class="flex space-x-2">
           {{#if slug}}
-            <a href="/{{slug}}" class="px-3 py-1 rounded hover:bg-white/10 transition {{langActive:en,bg-white/10}}">EN</a>
-            <a href="/de/{{slug}}" class="px-3 py-1 rounded hover:bg-white/10 transition {{langActive:de,bg-white/10}}">DE</a>
+            <a href="{{url:/}}{{slug}}" class="px-3 py-1 rounded hover:bg-white/10 transition {{langActive:en,bg-white/10}}">EN</a>
+            <a href="{{url:/de/}}{{slug}}" class="px-3 py-1 rounded hover:bg-white/10 transition {{langActive:de,bg-white/10}}">DE</a>
           {{#else}}
-            <a href="/" class="px-3 py-1 rounded hover:bg-white/10 transition {{langActive:en,bg-white/10}}">EN</a>
-            <a href="/de" class="px-3 py-1 rounded hover:bg-white/10 transition {{langActive:de,bg-white/10}}">DE</a>
+            <a href="{{url:/}}" class="px-3 py-1 rounded hover:bg-white/10 transition {{langActive:en,bg-white/10}}">EN</a>
+            <a href="{{url:/de/}}" class="px-3 py-1 rounded hover:bg-white/10 transition {{langActive:de,bg-white/10}}">DE</a>
           {{/if}}
         </div>
         <a href="https://github.com/giacomo/staticblocks" target="_blank" class="hover:text-blue-200 transition">
