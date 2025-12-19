@@ -1,0 +1,104 @@
+template: main
+title: CLI Commands - StaticBlocks
+meta:
+  description: Complete reference for all StaticBlocks CLI commands.
+
+blocks:
+  - block: header
+    langSwitcher: true
+    slug: cli
+
+  - block: hero
+    title: "{{translate:pages.cli.title}}"
+    description: "{{translate:pages.cli.description}}"
+
+  - block: code-example
+    title: "{{translate:pages.cli.init_title}}"
+    language: bash
+    code: |
+      staticblocks init <project-name>
+
+      # Example
+      staticblocks init my-website
+    description: "{{translate:pages.cli.init_description}}"
+
+  - block: code-example
+    title: "{{translate:pages.cli.generate_title}}"
+    language: bash
+    code: |
+      staticblocks generate <type> <name> [options]
+      # Alias: staticblocks g
+
+      # Generate a block
+      staticblocks generate block hero
+      staticblocks generate block slider --with-js --with-css
+
+      # Generate a template
+      staticblocks generate template blog
+
+      # Generate a page
+      staticblocks generate page about
+    description: "{{translate:pages.cli.generate_description}}"
+
+  - block: code-example
+    title: "{{translate:pages.cli.build_title}}"
+    language: bash
+    code: |
+      staticblocks build [options]
+
+      # Basic build
+      staticblocks build
+
+      # Verbose output
+      staticblocks build --verbose
+
+      # With minification
+      staticblocks build --minify
+    description: "{{translate:pages.cli.build_description}}"
+
+  - block: code-example
+    title: "{{translate:pages.cli.dev_title}}"
+    language: bash
+    code: |
+      staticblocks dev [options]
+
+      # Start dev server (default port 3000)
+      staticblocks dev
+
+      # Custom port
+      staticblocks dev --port 8080
+
+      # Auto-open browser
+      staticblocks dev --open
+    description: "{{translate:pages.cli.dev_description}}"
+
+  - block: code-example
+    title: "{{translate:pages.cli.validate_title}}"
+    language: bash
+    code: |
+      staticblocks validate [type]
+
+      # Validate everything
+      staticblocks validate
+
+      # Validate specific type
+      staticblocks validate pages
+      staticblocks validate locales
+      staticblocks validate templates
+      staticblocks validate blocks
+    description: "{{translate:pages.cli.validate_description}}"
+
+  - block: code-example
+    title: "{{translate:pages.cli.add_title}}"
+    language: bash
+    code: |
+      staticblocks add <type> <name>
+
+      # Add a new locale
+      staticblocks add locale fr
+
+      # Add a new script
+      staticblocks add script analytics
+    description: "{{translate:pages.cli.add_description}}"
+
+  - block: footer

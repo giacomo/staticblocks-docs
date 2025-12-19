@@ -1,0 +1,122 @@
+{
+  "nav": {
+    "home": "Home",
+    "getting_started": "Getting Started",
+    "template_syntax": "Template Syntax",
+    "cli": "CLI",
+    "examples": "Examples"
+  },
+  "footer": {
+    "tagline": "A simple, block-based static site generator",
+    "documentation": "Documentation",
+    "community": "Community",
+    "resources": "Resources",
+    "issues": "Issues",
+    "discussions": "Discussions",
+    "license": "MIT License"
+  },
+  "pages": {
+    "home": {
+      "title": "Build Static Sites with Blocks",
+      "description": "A modern, simple static site generator with block-based architecture, built-in i18n support, and zero runtime JavaScript required.",
+      "why_title": "Why StaticBlocks?",
+      "why_subtitle": "Everything you need to build modern static websites",
+      "cta": "Get Started",
+      "secondary_cta": "View on GitHub",
+      "quick_example_title": "Quick Example",
+      "quick_example_description": "Define pages with YAML and compose them from reusable blocks",
+      "features": {
+        "blocks": {
+          "title": "Block-Based Architecture",
+          "description": "Build pages by composing reusable blocks. Each block is a simple HTML file with props."
+        },
+        "i18n": {
+          "title": "Built-in i18n",
+          "description": "Multi-language support out of the box. Define translations and generate pages for each locale automatically."
+        },
+        "typescript": {
+          "title": "TypeScript-Based",
+          "description": "Built with TypeScript for type safety and better developer experience. CLI and core are fully typed."
+        },
+        "fast": {
+          "title": "Fast Builds",
+          "description": "Optimized build process with esbuild for JavaScript bundling. Watch mode with instant rebuilds."
+        },
+        "seo": {
+          "title": "SEO-Optimized",
+          "description": "Automatic sitemap generation, meta tags, Open Graph, and robots.txt for better search engine visibility."
+        },
+        "zero_js": {
+          "title": "Zero Runtime JS",
+          "description": "Generate pure HTML/CSS. Add JavaScript only where needed with automatic bundling."
+        }
+      }
+    },
+    "getting_started": {
+      "title": "Getting Started",
+      "description": "Install StaticBlocks and create your first project in minutes",
+      "installation_title": "Installation",
+      "installation_description": "Install via npm or use directly with npx",
+      "first_project_title": "Create Your First Project",
+      "first_project_description": "The init command will ask you about CSS framework, icons, and i18n preferences",
+      "project_structure_title": "Project Structure",
+      "project_structure_description": "Overview of the main project directories and files",
+      "build_commands_title": "Build Commands",
+      "build_commands_description": "Common commands for development and deployment",
+      "next_steps_title": "Next Steps",
+      "next_step_1": "Learn about",
+      "next_step_2": "Explore",
+      "next_step_3": "Check out"
+    },
+    "template_syntax": {
+      "title": "Template Syntax",
+      "description": "Learn how to use variables, conditionals, loops, and helpers in your templates",
+      "variables_title": "Variables",
+      "variables_content": "<p>Use double curly braces to insert variables:</p>",
+      "variables_example_description": "Access page properties and block props with dot notation",
+      "conditionals_title": "Conditionals",
+      "conditionals_content": "<p>Show content conditionally with #if blocks:</p>",
+      "conditionals_example_description": "Use {{#if}} for conditional rendering with optional {{#else}}",
+      "loops_title": "Loops",
+      "loops_content": "<p>Iterate over arrays with #each:</p>",
+      "loops_example_description": "Loop variables @index, @first, and @last are available inside loops",
+      "helpers_title": "Helper Functions",
+      "helpers_content": "<p>StaticBlocks provides several built-in helpers:</p>",
+      "translation_helper": "Translation Helper",
+      "translation_helper_description": "Access translations from locale files",
+      "active_navigation": "Active Navigation",
+      "active_navigation_description": "Add 'active' class to current page links",
+      "url_helpers": "URL Helpers",
+      "url_helpers_description": "Helpers for URLs, assets, and dynamic content"
+    },
+    "cli": {
+      "title": "CLI Commands",
+      "description": "Complete reference for all available commands",
+      "init_title": "staticblocks init",
+      "init_description": "Create a new StaticBlocks project with interactive prompts for CSS framework, icons, and i18n",
+      "generate_title": "staticblocks generate",
+      "generate_description": "Generate blocks, templates, or pages. Use --with-js and --with-css flags for blocks",
+      "build_title": "staticblocks build",
+      "build_description": "Build the project for production. Generates HTML, bundles JS, processes CSS, and creates SEO files",
+      "dev_title": "staticblocks dev",
+      "dev_description": "Start development server with hot reload and file watching",
+      "validate_title": "staticblocks validate",
+      "validate_description": "Validate project configuration and files. Checks for missing files, invalid syntax, and broken references",
+      "add_title": "staticblocks add",
+      "add_description": "Add new locales or scripts to your project"
+    },
+    "examples": {
+      "title": "Examples",
+      "description": "Real-world examples and patterns for building with StaticBlocks",
+      "landing_title": "Simple Landing Page",
+      "landing_content": "<p>A basic landing page with hero, features, and contact form:</p>",
+      "blog_title": "Multi-Language Blog",
+      "blog_content": "<p>A blog with i18n support:</p>",
+      "blog_translation_description": "Translation files for blog content",
+      "portfolio_title": "Portfolio with Projects",
+      "portfolio_content": "<p>A portfolio site with dynamic project listings:</p>",
+      "docs_title": "Documentation Site",
+      "docs_content": "<p>This very site is built with StaticBlocks! Check out the <a href=\"https://github.com/giacomo/staticblocks-docs\" class=\"text-blue-600 hover:underline\" target=\"_blank\">source code</a> to see how it's structured.</p>"
+    }
+  }
+}

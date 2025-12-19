@@ -1,0 +1,14 @@
+{
+  "name": "staticblocks-docs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "staticblocks dev",
+    "build": "staticblocks build",
+    "validate": "staticblocks validate"
+  },
+  "devDependencies": {
+    "staticblocks": "^0.1.0",
+    "tailwindcss": "^3.3.0"
+  }
+}

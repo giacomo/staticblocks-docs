@@ -1,0 +1,65 @@
+template: main
+title: StaticBlocks - Simple Block-Based Static Site Generator
+meta:
+  description: A modern, simple static site generator with block-based architecture, built-in i18n, and zero runtime JavaScript required.
+  keywords:
+    - static site generator
+    - blocks
+    - i18n
+    - tailwind
+    - typescript
+
+blocks:
+  - block: header
+    langSwitcher: true
+    slug: ""
+
+  - block: hero
+    title: "{{translate:pages.home.title}}"
+    description: "{{translate:pages.home.description}}"
+    cta: "{{translate:pages.home.cta}}"
+    ctaLink: /getting-started/
+    secondaryCta: "{{translate:pages.home.secondary_cta}}"
+    secondaryCtaLink: https://github.com/giacomo/staticblocks
+
+  - block: feature-grid
+    title: "{{translate:pages.home.why_title}}"
+    subtitle: "{{translate:pages.home.why_subtitle}}"
+    features:
+      - title: "{{translate:pages.home.features.blocks.title}}"
+        description: "{{translate:pages.home.features.blocks.description}}"
+        icon: blocks
+      - title: "{{translate:pages.home.features.i18n.title}}"
+        description: "{{translate:pages.home.features.i18n.description}}"
+        icon: globe
+      - title: "{{translate:pages.home.features.typescript.title}}"
+        description: "{{translate:pages.home.features.typescript.description}}"
+        icon: code-2
+      - title: "{{translate:pages.home.features.fast.title}}"
+        description: "{{translate:pages.home.features.fast.description}}"
+        icon: zap
+      - title: "{{translate:pages.home.features.seo.title}}"
+        description: "{{translate:pages.home.features.seo.description}}"
+        icon: search
+      - title: "{{translate:pages.home.features.zero_js.title}}"
+        description: "{{translate:pages.home.features.zero_js.description}}"
+        icon: check-circle
+
+  - block: code-example
+    title: "{{translate:pages.home.quick_example_title}}"
+    language: yaml
+    code: |
+      # pages/index.yaml
+      template: main
+      title: Welcome
+      blocks:
+        - block: hero
+          title: Hello World
+          description: Build fast, ship faster
+        - block: features
+          items:
+            - title: Simple
+              description: Easy to learn
+    description: "{{translate:pages.home.quick_example_description}}"
+
+  - block: footer

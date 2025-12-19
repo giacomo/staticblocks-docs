@@ -1,0 +1,122 @@
+{
+  "nav": {
+    "home": "Start",
+    "getting_started": "Erste Schritte",
+    "template_syntax": "Template-Syntax",
+    "cli": "CLI",
+    "examples": "Beispiele"
+  },
+  "footer": {
+    "tagline": "Ein einfacher, blockbasierter statischer Website-Generator",
+    "documentation": "Dokumentation",
+    "community": "Community",
+    "resources": "Ressourcen",
+    "issues": "Issues",
+    "discussions": "Diskussionen",
+    "license": "MIT-Lizenz"
+  },
+  "pages": {
+    "home": {
+      "title": "Erstelle statische Websites mit Blöcken",
+      "description": "Ein moderner, einfacher Static Site Generator mit blockbasierter Architektur, integrierter i18n-Unterstützung und ohne Runtime-JavaScript.",
+      "why_title": "Warum StaticBlocks?",
+      "why_subtitle": "Alles was du brauchst, um moderne statische Websites zu erstellen",
+      "cta": "Erste Schritte",
+      "secondary_cta": "Auf GitHub ansehen",
+      "quick_example_title": "Schnelles Beispiel",
+      "quick_example_description": "Definiere Seiten mit YAML und setze sie aus wiederverwendbaren Blöcken zusammen",
+      "features": {
+        "blocks": {
+          "title": "Blockbasierte Architektur",
+          "description": "Erstelle Seiten durch Zusammensetzen wiederverwendbarer Blöcke. Jeder Block ist eine einfache HTML-Datei mit Props."
+        },
+        "i18n": {
+          "title": "Integrierte i18n",
+          "description": "Mehrsprachige Unterstützung out of the box. Definiere Übersetzungen und generiere automatisch Seiten für jede Sprache."
+        },
+        "typescript": {
+          "title": "TypeScript-basiert",
+          "description": "Mit TypeScript gebaut für Typsicherheit und bessere Entwickler-Erfahrung. CLI und Core sind vollständig typisiert."
+        },
+        "fast": {
+          "title": "Schnelle Builds",
+          "description": "Optimierter Build-Prozess mit esbuild für JavaScript-Bundling. Watch-Modus mit sofortigen Rebuilds."
+        },
+        "seo": {
+          "title": "SEO-Optimiert",
+          "description": "Automatische Sitemap-Generierung, Meta-Tags, Open Graph und robots.txt für bessere Suchmaschinen-Sichtbarkeit."
+        },
+        "zero_js": {
+          "title": "Ohne Runtime-JS",
+          "description": "Generiere reines HTML/CSS. Füge JavaScript nur dort hinzu, wo es benötigt wird, mit automatischem Bundling."
+        }
+      }
+    },
+    "getting_started": {
+      "title": "Erste Schritte",
+      "description": "Installiere StaticBlocks und erstelle dein erstes Projekt in wenigen Minuten",
+      "installation_title": "Installation",
+      "installation_description": "Installiere über npm oder nutze es direkt mit npx",
+      "first_project_title": "Erstelle dein erstes Projekt",
+      "first_project_description": "Der init-Befehl fragt dich nach CSS-Framework, Icons und i18n-Einstellungen",
+      "project_structure_title": "Projektstruktur",
+      "project_structure_description": "Überblick über die wichtigsten Projektverzeichnisse und -dateien",
+      "build_commands_title": "Build-Befehle",
+      "build_commands_description": "Gängige Befehle für Entwicklung und Deployment",
+      "next_steps_title": "Nächste Schritte",
+      "next_step_1": "Lerne über",
+      "next_step_2": "Erkunde",
+      "next_step_3": "Schau dir an"
+    },
+    "template_syntax": {
+      "title": "Template-Syntax",
+      "description": "Lerne wie du Variablen, Bedingungen, Schleifen und Helfer in deinen Templates verwendest",
+      "variables_title": "Variablen",
+      "variables_content": "<p>Verwende doppelte geschweifte Klammern, um Variablen einzufügen:</p>",
+      "variables_example_description": "Greife mit Punkt-Notation auf Seiten-Eigenschaften und Block-Props zu",
+      "conditionals_title": "Bedingungen",
+      "conditionals_content": "<p>Zeige Inhalte bedingt mit #if-Blöcken an:</p>",
+      "conditionals_example_description": "Nutze {{#if}} für bedingte Darstellung mit optionalem {{#else}}",
+      "loops_title": "Schleifen",
+      "loops_content": "<p>Iteriere über Arrays mit #each:</p>",
+      "loops_example_description": "Schleifen-Variablen @index, @first und @last sind innerhalb von Schleifen verfügbar",
+      "helpers_title": "Helfer-Funktionen",
+      "helpers_content": "<p>StaticBlocks bietet mehrere eingebaute Helfer:</p>",
+      "translation_helper": "Übersetzungs-Helfer",
+      "translation_helper_description": "Greife auf Übersetzungen aus Locale-Dateien zu",
+      "active_navigation": "Aktive Navigation",
+      "active_navigation_description": "Füge 'active'-Klasse zu aktuellen Seiten-Links hinzu",
+      "url_helpers": "URL-Helfer",
+      "url_helpers_description": "Helfer für URLs, Assets und dynamische Inhalte"
+    },
+    "cli": {
+      "title": "CLI-Befehle",
+      "description": "Vollständige Referenz aller verfügbaren Befehle",
+      "init_title": "staticblocks init",
+      "init_description": "Erstelle ein neues StaticBlocks-Projekt mit interaktiven Fragen zu CSS-Framework, Icons und i18n",
+      "generate_title": "staticblocks generate",
+      "generate_description": "Generiere Blöcke, Templates oder Seiten. Nutze --with-js und --with-css Flags für Blöcke",
+      "build_title": "staticblocks build",
+      "build_description": "Build das Projekt für Production. Generiert HTML, bündelt JS, verarbeitet CSS und erstellt SEO-Dateien",
+      "dev_title": "staticblocks dev",
+      "dev_description": "Starte Entwicklungsserver mit Hot Reload und Datei-Überwachung",
+      "validate_title": "staticblocks validate",
+      "validate_description": "Validiere Projektkonfiguration und -dateien. Prüft auf fehlende Dateien, ungültige Syntax und fehlerhafte Referenzen",
+      "add_title": "staticblocks add",
+      "add_description": "Füge neue Locales oder Skripte zu deinem Projekt hinzu"
+    },
+    "examples": {
+      "title": "Beispiele",
+      "description": "Praxisnahe Beispiele und Muster zum Entwickeln mit StaticBlocks",
+      "landing_title": "Einfache Landing Page",
+      "landing_content": "<p>Eine einfache Landing Page mit Hero, Features und Kontaktformular:</p>",
+      "blog_title": "Mehrsprachiger Blog",
+      "blog_content": "<p>Ein Blog mit i18n-Unterstützung:</p>",
+      "blog_translation_description": "Übersetzungsdateien für Blog-Inhalte",
+      "portfolio_title": "Portfolio mit Projekten",
+      "portfolio_content": "<p>Eine Portfolio-Website mit dynamischen Projekt-Listings:</p>",
+      "docs_title": "Dokumentations-Website",
+      "docs_content": "<p>Diese Website ist mit StaticBlocks erstellt! Schau dir den <a href=\"https://github.com/giacomo/staticblocks-docs\" class=\"text-blue-600 hover:underline\" target=\"_blank\">Quellcode</a> an, um zu sehen, wie sie strukturiert ist.</p>"
+    }
+  }
+}

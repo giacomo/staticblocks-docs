@@ -1,0 +1,107 @@
+template: main
+title: Template Syntax - StaticBlocks
+meta:
+  description: Learn the template syntax for variables, conditionals, loops, and helpers in StaticBlocks.
+
+blocks:
+  - block: header
+    langSwitcher: true
+    slug: template-syntax
+
+  - block: hero
+    title: "{{translate:pages.template_syntax.title}}"
+    description: "{{translate:pages.template_syntax.description}}"
+
+  - block: content-section
+    title: "{{translate:pages.template_syntax.variables_title}}"
+    content: "{{translate:pages.template_syntax.variables_content}}"
+
+  - block: code-example
+    language: html
+    code: |
+      <h1>{{page.title}}</h1>
+      <p>{{description}}</p>
+      <span>Language: {{currentLang}}</span>
+    description: "{{translate:pages.template_syntax.variables_example_description}}"
+
+  - block: content-section
+    title: "{{translate:pages.template_syntax.conditionals_title}}"
+    bgGray: true
+    content: "{{translate:pages.template_syntax.conditionals_content}}"
+
+  - block: code-example
+    language: html
+    bgGray: true
+    code: |
+      {{#if showButton}}
+        <button>{{buttonText}}</button>
+      {{/if}}
+
+      {{#if user}}
+        <p>Welcome, {{user.name}}!</p>
+      {{#else}}
+        <p>Please log in</p>
+      {{/if}}
+    description: "{{translate:pages.template_syntax.conditionals_example_description}}"
+
+  - block: content-section
+    title: "{{translate:pages.template_syntax.loops_title}}"
+    content: "{{translate:pages.template_syntax.loops_content}}"
+
+  - block: code-example
+    language: html
+    code: |
+      <ul>
+      {{#each items}}
+        <li>
+          {{title}} - {{description}}
+          {{#if @first}}(First item){{/if}}
+          {{#if @last}}(Last item){{/if}}
+        </li>
+      {{/each}}
+      </ul>
+    description: "{{translate:pages.template_syntax.loops_example_description}}"
+
+  - block: content-section
+    title: "{{translate:pages.template_syntax.helpers_title}}"
+    bgGray: true
+    content: "{{translate:pages.template_syntax.helpers_content}}"
+
+  - block: code-example
+    title: "{{translate:pages.template_syntax.translation_helper}}"
+    bgGray: true
+    language: html
+    code: |
+      <!-- Full syntax -->
+      {{translate:nav.home}}
+
+      <!-- Short alias -->
+      {{t:buttons.submit}}
+    description: "{{translate:pages.template_syntax.translation_helper_description}}"
+
+  - block: code-example
+    title: "{{translate:pages.template_syntax.active_navigation}}"
+    bgGray: true
+    language: html
+    code: |
+      <a href="/about/" class="{{active:/about/}}">
+        About
+      </a>
+    description: "{{translate:pages.template_syntax.active_navigation_description}}"
+
+  - block: code-example
+    title: "{{translate:pages.template_syntax.url_helpers}}"
+    bgGray: true
+    language: html
+    code: |
+      <!-- With language prefix -->
+      <a href="{{url:/contact/}}">Contact</a>
+
+      <!-- Asset URLs -->
+      <img src="{{asset:/images/logo.png}}">
+
+      <!-- Current year -->
+      <p>&copy; {{year}} Company</p>
+    description: "{{translate:pages.template_syntax.url_helpers_description}}"
+
+  - block: footer

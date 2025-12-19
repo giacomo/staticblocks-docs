@@ -1,0 +1,81 @@
+template: main
+title: Getting Started - StaticBlocks
+meta:
+  description: Learn how to install and use StaticBlocks to build your first static website.
+
+blocks:
+  - block: header
+    langSwitcher: true
+    slug: getting-started
+
+  - block: hero
+    title: "{{translate:pages.getting_started.title}}"
+    description: "{{translate:pages.getting_started.description}}"
+
+  - block: code-example
+    title: "{{translate:pages.getting_started.installation_title}}"
+    language: bash
+    code: |
+      # Install StaticBlocks globally
+      npm install -g staticblocks
+
+      # Or use with npx
+      npx staticblocks init my-website
+    description: "{{translate:pages.getting_started.installation_description}}"
+
+  - block: code-example
+    title: "{{translate:pages.getting_started.first_project_title}}"
+    language: bash
+    code: |
+      # Create a new project
+      staticblocks init my-website
+
+      # Navigate to project
+      cd my-website
+
+      # Install dependencies
+      yarn install
+
+      # Start development server
+      yarn run dev
+    description: "{{translate:pages.getting_started.first_project_description}}"
+
+  - block: code-example
+    title: "{{translate:pages.getting_started.project_structure_title}}"
+    code: |
+      ├── src/
+      │   ├── templates/      # HTML templates
+      │   ├── blocks/         # Reusable blocks
+      │   ├── pages/          # Page configurations (YAML)
+      │   ├── locales/        # Translation files (JSON)
+      │   └── assets/         # Static assets
+      ├── dist/               # Build output
+      ├── staticblocks.config.ts
+      └── package.json
+    description: "{{translate:pages.getting_started.project_structure_description}}"
+
+  - block: code-example
+    title: "{{translate:pages.getting_started.build_commands_title}}"
+    language: bash
+    code: |
+      # Development server with hot reload
+      yarn run dev
+
+      # Production build
+      yarn run build
+
+      # Validate project
+      yarn run validate
+    description: "{{translate:pages.getting_started.build_commands_description}}"
+
+  - block: content-section
+    title: "{{translate:pages.getting_started.next_steps_title}}"
+    bgGray: true
+    content: |
+      <ul class="space-y-2">
+        <li>✓ {{translate:pages.getting_started.next_step_1}} <a href="{{url:/template-syntax/}}" class="text-blue-600 hover:underline">{{translate:nav.template_syntax}}</a></li>
+        <li>✓ {{translate:pages.getting_started.next_step_2}} <a href="{{url:/cli/}}" class="text-blue-600 hover:underline">{{translate:nav.cli}}</a></li>
+        <li>✓ {{translate:pages.getting_started.next_step_3}} <a href="{{url:/examples/}}" class="text-blue-600 hover:underline">{{translate:nav.examples}}</a></li>
+      </ul>
+
+  - block: footer

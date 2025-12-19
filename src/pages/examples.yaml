@@ -1,0 +1,126 @@
+template: main
+title: Examples - StaticBlocks
+meta:
+  description: Real-world examples and use cases for StaticBlocks.
+
+blocks:
+  - block: header
+    langSwitcher: true
+    slug: examples
+
+  - block: hero
+    title: "{{translate:pages.examples.title}}"
+    description: "{{translate:pages.examples.description}}"
+
+  - block: content-section
+    title: "{{translate:pages.examples.landing_title}}"
+    content: "{{translate:pages.examples.landing_content}}"
+
+  - block: code-example
+    language: yaml
+    code: |
+      # pages/index.yaml
+      template: main
+      title: My Product
+      meta:
+        description: The best product ever
+      blocks:
+        - block: header
+        - block: hero
+          title: Welcome to My Product
+          description: Build amazing things
+          cta: Get Started
+          ctaLink: /signup/
+        - block: features
+          items:
+            - title: Fast
+              icon: M13 10V3L4 14h7v7l9-11h-7z
+            - title: Simple
+              icon: M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z
+        - block: cta-section
+          title: Ready to start?
+          buttonText: Sign Up Now
+          buttonLink: /signup/
+        - block: footer
+
+  - block: content-section
+    title: "{{translate:pages.examples.blog_title}}"
+    bgGray: true
+    content: "{{translate:pages.examples.blog_content}}"
+
+  - block: code-example
+    language: yaml
+    bgGray: true
+    code: |
+      # pages/blog/post-1.yaml
+      template: blog
+      title: My First Post
+      meta:
+        description: An introduction to our blog
+      blocks:
+        - block: header
+        - block: blog-post
+          title: "{{translate:blog.post1.title}}"
+          content: "{{translate:blog.post1.content}}"
+          author: John Doe
+          date: 2024-01-15
+        - block: footer
+
+  - block: code-example
+    language: json
+    bgGray: true
+    code: |
+      // locales/en.json
+      {
+        "blog": {
+          "post1": {
+            "title": "Getting Started",
+            "content": "This is my first post..."
+          }
+        }
+      }
+
+      // locales/de.json
+      {
+        "blog": {
+          "post1": {
+            "title": "Erste Schritte",
+            "content": "Dies ist mein erster Beitrag..."
+          }
+        }
+      }
+    description: "{{translate:pages.examples.blog_translation_description}}"
+
+  - block: content-section
+    title: "{{translate:pages.examples.portfolio_title}}"
+    content: "{{translate:pages.examples.portfolio_content}}"
+
+  - block: code-example
+    language: yaml
+    code: |
+      # pages/portfolio.yaml
+      template: main
+      title: My Portfolio
+      blocks:
+        - block: header
+        - block: hero
+          title: John Doe
+          description: Web Developer & Designer
+        - block: project-grid
+          projects:
+            - title: E-Commerce Site
+              description: Built with React and Node.js
+              image: /assets/images/project1.jpg
+              link: /projects/ecommerce/
+            - title: Dashboard App
+              description: Analytics dashboard
+              image: /assets/images/project2.jpg
+              link: /projects/dashboard/
+        - block: footer
+
+  - block: content-section
+    title: "{{translate:pages.examples.docs_title}}"
+    bgGray: true
+    content: "{{translate:pages.examples.docs_content}}"
+
+  - block: footer

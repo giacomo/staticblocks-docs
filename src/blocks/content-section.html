@@ -1,0 +1,15 @@
+<section class="{{#if content}}py-12{{#else}}pt-12{{/if}} {{#if bgGray}}bg-gray-50{{#else}}bg-white{{/if}}">
+  <div class="container mx-auto px-6">
+    <div class="prose prose-lg">
+      {{#if title}}
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">{{title}}</h2>
+      {{/if}}
+
+      {{#if content}}
+      <div class="text-gray-700 leading-relaxed">
+        {{content}}
+      </div>
+      {{/if}}
+    </div>
+  </div>
+</section>
