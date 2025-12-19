@@ -1,4 +1,5 @@
 export default {
+  baseUrl: "https://giacomo.github.io/staticblocks-docs/",
   css: "tailwind",
   icons: "lucide",
   port: 3000,

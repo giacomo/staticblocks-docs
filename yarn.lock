@@ -2054,14 +2054,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "staticblocks-docs@workspace:."
   dependencies:
-    staticblocks: "npm:^0.1.0"
+    staticblocks: "npm:^0.1.1"
     tailwindcss: "npm:^3.3.0"
   languageName: unknown
   linkType: soft
 
-"staticblocks@npm:^0.1.0":
-  version: 0.1.0
-  resolution: "staticblocks@npm:0.1.0"
+"staticblocks@npm:^0.1.1":
+  version: 0.1.1
+  resolution: "staticblocks@npm:0.1.1"
   dependencies:
     autoprefixer: "npm:^10.4.16"
     chalk: "npm:^4.1.2"
@@ -2076,7 +2076,7 @@ __metadata:
     ws: "npm:^8.18.3"
   bin:
     staticblocks: dist/cli.js
-  checksum: 10c0/6191622effc3abb77f1b5a7722a02847986dede8fc9ea6c2945882c1b1b1cbd6f9486c9d2adcb2eaaaebad596797d63b0be86b593c1755b51784c09e6f8ef969
+  checksum: 10c0/e8773931dce1d791570fb6cf6bf165fba8bbfdba54152de242923600f893889798741060a1df04b2baafe1dad201ff99aeb87d72aff3fa6ee54ef31d5d595fe6
   languageName: node
   linkType: hard
 
