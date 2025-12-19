@@ -18,7 +18,7 @@ blocks:
     title: "{{translate:pages.home.title}}"
     description: "{{translate:pages.home.description}}"
     cta: "{{translate:pages.home.cta}}"
-    ctaLink: /getting-started/
+    ctaLink: "{{url:/getting-started/}}"
     secondaryCta: "{{translate:pages.home.secondary_cta}}"
     secondaryCtaLink: https://github.com/giacomo/staticblocks
 
