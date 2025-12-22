@@ -77,5 +77,3 @@ blocks:
         <li>✓ {{translate:pages.getting_started.next_step_2}} <a href="{{url:/cli/}}" class="text-blue-600 hover:underline">{{translate:nav.cli}}</a></li>
         <li>✓ {{translate:pages.getting_started.next_step_3}} <a href="{{url:/examples/}}" class="text-blue-600 hover:underline">{{translate:nav.examples}}</a></li>
       </ul>
-
-  - block: footer

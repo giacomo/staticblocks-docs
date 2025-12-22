@@ -61,5 +61,3 @@ blocks:
             - title: Simple
               description: Easy to learn
     description: "{{translate:pages.home.quick_example_description}}"
-
-  - block: footer

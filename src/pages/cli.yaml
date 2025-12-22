@@ -100,5 +100,3 @@ blocks:
       # Add a new script
       staticblocks add script analytics
     description: "{{translate:pages.cli.add_description}}"
-
-  - block: footer

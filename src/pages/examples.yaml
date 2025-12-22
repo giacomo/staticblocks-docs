@@ -122,5 +122,3 @@ blocks:
     title: "{{translate:pages.examples.docs_title}}"
     bgGray: true
     content: "{{translate:pages.examples.docs_content}}"
-
-  - block: footer

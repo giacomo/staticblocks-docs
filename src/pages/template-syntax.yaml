@@ -103,5 +103,3 @@ blocks:
       <!-- Current year -->
       <p>&copy; {{year}} Company</p>
     description: "{{translate:pages.template_syntax.url_helpers_description}}"
-
-  - block: footer
